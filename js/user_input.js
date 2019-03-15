@@ -5,3 +5,10 @@ $(function() {
     });
 });
 
+function submitText(){
+    $(function() {
+        let text = $('#user_input_text').val();
+        window.sessionStorage.setItem(['user_text'],[text]);
+        location.href = 'result.hetml';
+    });
+}
