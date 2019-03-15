@@ -1,0 +1,99 @@
+.main {
+    background-color: #E6E5E1;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+  }
+  .main .top {
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/top.png");
+  }
+  .main .top .text_table {
+    margin: 0 auto;
+    display: table;
+  }
+  .main .top .text_table .top_text {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .main .top .text_table .top_text h1 {
+    font-family: serif;
+    font: bold;
+  }
+  .main .center {
+    margin: auto;
+    background-color: #27313D;
+    width: 90%;
+    max-width: 1200px;
+  }
+  .main .center h2 {
+    margin: 0 0;
+    padding-top: 10px;
+  }
+  .main .center .discription {
+    padding-left: 20px;
+  }
+
+  .main .center .form {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .main .center .form .counter {
+    text-align: right;
+    font: bold;
+    padding-right: 20px;
+  }
+  .main .center .form textarea {
+    width: 100%;
+    border: medium solid #2f5ecc;
+    height: 400px;
+    resize: none;
+  }
+  .main .center .form .button {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .main .center .form .button .submit_button {
+    padding: 10px 20px;
+    background-color: #E6E5E1;
+    color: white;
+  }
+  .main .center .novel_glaph {
+    background-color: white;
+  }
+  .main .center .novel_glaph .text {
+    padding-left: 20px;
+  }
+  .main .center .novel_glaph .glaph {
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 749px) {
+    .main .center .novel_glaph .glaph canvas {
+      width: 800px;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    .main .center .novel_glaph .glaph canvas {
+      width: 1100px;
+    }
+  }
+  @media only screen and (max-width: 899px) and (min-width: 750px) {
+    .main .center .novel_glaph .glaph canvas {
+      width: 1100px;
+    }
+  }
+  .main .center .novel_glaph .button {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .main .center .novel_glaph .button .submit_button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+  }

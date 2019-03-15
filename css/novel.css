@@ -1,0 +1,102 @@
+body{ 
+    width: 100%;
+    text-align: center;
+    font-family: "M PLUS 1p";
+    background-color: #F5F5F5;
+  }
+
+.title{
+      padding-top: 5vh;
+      padding-bottom: 4vh;
+  }
+
+h1 {
+    /* font-family: "Sawarabi Gothic"; */
+    font-family: "M PLUS Rounded 1c";
+            position: relative;
+    line-height: 1.4;
+    padding:0.25em 1em;
+    display: inline-block;
+  }
+  
+  h1:before, h1:after { 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+  }
+  
+  h1:before {
+    border-left: solid 2px #2C5379;
+    border-top: solid 2px #2C5379;
+    top:0;
+    left: 0;
+  }
+  
+  h1:after {
+    border-right: solid 2px #2C5379;
+    border-bottom: solid 2px #2C5379;
+    bottom:0;
+    right: 0;
+  }
+
+
+  .msr_btn07 a {
+    margin: 0 auto;
+    background-color: #08233E;
+    box-sizing: border-box;
+    color: #CCD0D5;
+    font-size: 13px;
+    display: block;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    width: 250px;
+  }
+  /* 白の三角形 */
+  .msr_btn07 a:before {
+    border: 4px solid transparent;
+    border-left: 4px solid #CCD0D5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    margin:0 4px 0 0;
+    height: 8px;
+    width: 4px;
+    vertical-align:0px;
+  }
+  /* マウスオーバー */
+  .msr_btn07 a:hover {
+    background-color: #2C5379;
+  }
+
+  .submit-button{
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+  }
+
+  .textlines {
+    resize: none;
+    border: 2px solid #2C5379;  /* 枠線 */
+    border-radius: 0.2em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    /* background-color: snow;  背景色 */
+    width: 90%;             /* 横幅 */
+    height: 50vh;           /* 高さ */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+ }
+
+ .counter{
+     text-align: right;
+     padding-right: 5%;
+ }
+

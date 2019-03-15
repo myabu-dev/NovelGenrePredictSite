@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ジャンル分析</title>
+    <meta name="csrf-param" content="authenticity_token" />
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $('textarea').bind('keydown keyup keypress change',function(){
+        var thisValueLength = $(this).val().length;
+        $('.count').html(thisValueLength);
+       });
+    });
+    </script>
+  </head>
+
+  <body>
+    
+
+
+<div class="main">
+    <div class="top">
+        <div class="text_table">
+            <div class="top_text">
+                <h1>ジャンル成分分析</h1>
+                <p>好きな文章を入力してください<br>
+                    AIがどんなジャンルの成分を持っているか判別します</p>   
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="novel_glaph">
+            <div class="text">
+                <h2>分析結果</h2>
+                ジャンル名をクリックすると、そのジャンルを除いた割合が表示されます
+            </div>
+            <div class="glaph">
+                <canvas id="myChart"></canvas> 
+                <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                            labels:['恋愛（異世界）', '恋愛（現実世界）', 'ハイファンタジー', 'ローファンタジー', '純文学', 'ヒューマンドラマ' , '歴史','推理','ホラー', 'アクション', 'コメディ', 'VRゲーム', '宇宙', '空想科学','パニック'],
+                            datasets: [{
+                                backgroundColor: [
+                                    "#FE2E64",
+                                    "#FE2E9A",
+                                    "#58FA82",
+                                    "#58FA58",
+                                    "#FAAC58",
+                                    "#FA8258",
+                                    "#AC58FA",
+                                    "#58ACFA",
+                                    "#A4A4A4",
+                                    "#FA5882",
+                                    "#F7FE2E",
+                                    "#00BFFF",
+                                    "#4000FF",
+                                    "#642EFE",
+                                    "#848484"
+                                  ],
+                                data: [0.0089217, 0.08413839, 0.0098751765, 0.040477987, 0.21149538, 0.1873054, 0.0041144, 0.08125574, 0.09406394, 0.038451657, 0.042068116, 0.0048889075, 0.024957621, 0.08831375, 0.0796719]
+,
+                            }]
+                        },
+                        options: {
+                            title:  {
+                            display: true,
+                            text: "タイトル"
+                            },
+                            responsive: true,
+                            maintainAspectRatio: false
+                        }
+                    });
+                </script>
+            </div>     
+            <form action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            <div class="button">
+                <input type="submit" value="戻る" class="submit_button">
+            </div>
+</form>    
+        </div>
+
+    
+ 
+    </div>
+</div>
+
+  </body>
+</html>

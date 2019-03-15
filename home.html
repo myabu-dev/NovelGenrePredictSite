@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>ジャンル分析</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/novel.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/user_input.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>ジャンル分類</h1>
+    </div>
+    <div clss="discription">
+        <p>好きな文章を入力してください
+        <br>AIがどんなジャンルを持っているか判別します</p>
+        <p>テキストの2000文字以降は判定に含まれません</p>
+    </div>
+    <div class="counter">
+            <span class="count">0</span>/2000文字
+    </div>
+    <div class="input-area">
+        <form>
+            <textarea class="textlines" placeholder="ここに分析したいテキストを入れてください"></textarea>
+        </form>
+    </div>
+    <div class="submit-button">
+        <p class="msr_btn07">
+            <a href="#">判定する</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
