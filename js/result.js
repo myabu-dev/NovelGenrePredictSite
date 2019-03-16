@@ -1,13 +1,16 @@
 $(document).ready(function() {
-    let text = window.sessionStorage.getItem(['myabu/user_text']);    
+    let text_val = window.sessionStorage.getItem(['myabu/user_text']);    
     window.sessionStorage.clear();
+    console.log("ajax");
     $.ajax({
-        url: "http://118.27.24.174/novel-genre/api/",
+        url: "http://127.0.0.1:8000",
         type: 'POST',
-        data: {'text':text}
+        dataType : 'json',
+        data: {sentence:text_val},
     }).done(function(res){
-        doPredict($res['padded_seq']);
-    });
+        console.log("res",res);
+        doPredict(res['padded_seq']);
+    });    
 });
 
 // tensor flowの処理
