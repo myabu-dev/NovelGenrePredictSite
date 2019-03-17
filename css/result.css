@@ -1,0 +1,36 @@
+
+.title{
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+}
+
+h1 {
+    font-family: "M PLUS Rounded 1c";
+    position: relative;
+    line-height: 1.4;
+    padding:0.25em 1em;
+    display: inline-block;
+    top:0;
+  }
+  
+  h1:before, h1:after { 
+    position: absolute;
+    top: 0;
+    content:'';
+    width: 8px;
+    height: 100%;
+    display: inline-block;
+  }
+  h1:before {
+    border-left: solid 2px #2C5379;
+    border-top: solid 2px #2C5379;
+    border-bottom: solid 2px #2C5379;
+    left: 0;
+  }
+  h1:after {
+    content: '';
+    border-top: solid 2px #2C5379;
+    border-right: solid 2px #2C5379;
+    border-bottom: solid 2px #2C5379;
+    right: 0;
+  }

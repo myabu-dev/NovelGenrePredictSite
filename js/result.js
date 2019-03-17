@@ -1,14 +1,14 @@
 $(document).ready(function() {
     let text_val = window.sessionStorage.getItem(['myabu/user_text']);    
     window.sessionStorage.clear();
-    console.log("ajax");
+    
+    console.log("aaaa");
     $.ajax({
-        url: "http://127.0.0.1:8000",
+        url: "http://127.0.0.1:55000",
         type: 'POST',
         dataType : 'json',
         data: {sentence:text_val},
     }).done(function(res){
-        console.log("res",res);
         doPredict(res['padded_seq']);
     });    
 });
@@ -23,6 +23,9 @@ async function doPredict(text_data){
 }
 
 function showResult(result){
+    $('.bookshelf_wrapper').fadeOut(400);
+    $('.result_wrapper').css('display','none');
+    $('.result_wrapper').delay(400).fadeIn(400);
     console.log(result.dataSync()[0]);
     console.log(result.dataSync()[1]);
     console.log(result.dataSync()[2]);
