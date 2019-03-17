@@ -28,7 +28,7 @@ async function doPredict(text_data){
 function showResult(result){
     let datas = result.dataSync();
     showGraph(datas);
-    $('.bookshelf_wrapper').fadeOut(400);
+    $('.loading').fadeOut(400);
     $('.result_wrapper').delay(400).fadeIn(400);
     // console.log(result.dataSync()[0]);
     // console.log(result.dataSync()[1]);
