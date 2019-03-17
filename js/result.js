@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     console.log("aaaa");
     $.ajax({
-        url: "https://myabu.dev/api/",
+        url: "https://myabu.dev/novel/ganre/api/",
         type: 'POST',
         dataType : 'json',
         data: {sentence:text_val},
