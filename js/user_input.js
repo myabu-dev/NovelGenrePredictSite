@@ -7,6 +7,7 @@ $(function() {
 
 function submitText(){
     $(function() {
+        window.sessionStorage.clear();
         let text = $('#user_input_text').val();
         if (text.length < 10){
             $('#error_message').text('テキストは１０文字以上入力してください');
