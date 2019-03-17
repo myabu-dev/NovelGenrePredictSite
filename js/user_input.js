@@ -20,10 +20,10 @@ $(document).ready(function() {
     if( getDevice == 'sp' ){
         //スマホ
         $('.content').css('display','none');
-        $('#message').text('スマートフォンではメモリが足りないため実行できません<br>PCでの閲覧をお願いします');
+        $('#message').html('スマートフォンではメモリが足りないため実行できません<br>PCでの閲覧をお願いします');
     }else if( getDevice == 'tab' ){
         //タブレット
-        $('#message').text('メモリが不足し結果が表示できない可能性があります<br>PCでの閲覧をお願いします');
+        $('#message').html('メモリが不足し結果が表示できない可能性があります<br>PCでの閲覧をお願いします');
     }else if( getDevice == 'other' ){
         //その他
     }
