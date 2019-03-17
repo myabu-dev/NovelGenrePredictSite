@@ -23,21 +23,23 @@
         <br>AIがどんなジャンルを持っているか判別します</p>
         <p>テキストの2000文字以降は判定に含まれません</p>
     </div>
+    <span id="message" style="color:red;"></span>
     <span id="error_message" style="color:red;"></span>
-    <div class="counter">
-            <span class="count">0</span>/2000文字
+    <div class="content">
+        <div class="counter">
+                <span class="count">0</span>/2000文字
+        </div>
+        <div class="input-area">
+            <form>
+                <textarea id="user_input_text" class="textlines" placeholder="ここに分析したいテキストを入れてください"></textarea>
+            </form>
+        </div>
+        <div class="submit-button">
+            <p class="msr_btn07">
+                <a href="javascript:void(0);" onclick="submitText();">分析する</a>
+            </p>
+        </div>
     </div>
-    <div class="input-area">
-        <form>
-            <textarea id="user_input_text" class="textlines" placeholder="ここに分析したいテキストを入れてください"></textarea>
-        </form>
-    </div>
-    <div class="submit-button">
-        <p class="msr_btn07">
-            <a href="javascript:void(0);" onclick="submitText();">分析する</a>
-        </p>
-    </div>
-
 </body>
 
 </html>
