@@ -10,7 +10,15 @@ $(document).ready(function() {
         data: {sentence:text_val},
     }).done(function(res){
         doPredict(res['padded_seq']);
-    });    
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+            $("#XMLHttpRequest").html("XMLHttpRequest : " + jqXHR.status);
+            $("#textStatus").html("textStatus : " + textStatus);
+            $("#errorThrown").html("errorThrown : " + errorThrown);
+       })
+.always(function() {
+             alert("finishi");
+       })
+        
 });
 
 // tensor flowの処理
