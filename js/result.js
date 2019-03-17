@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     console.log("aaaa");
     $.ajax({
-        url: "http://127.0.0.1:55000",
+        url: "https://myabu.dev/app/ganre/api",
         type: 'POST',
         dataType : 'json',
         data: {sentence:text_val},
